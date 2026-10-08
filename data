@@ -1,0 +1,426 @@
+--
+-- PostgreSQL database dump
+--
+
+\restrict BSJONhMGZ8T2vW045OU8jWJE3q2smOxwL0UQZRsaTD06F70UfxawPdIK6MsvV0W
+
+-- Dumped from database version 18.1 (Ubuntu 18.1-1.pgdg24.04+2)
+-- Dumped by pg_dump version 18.1 (Ubuntu 18.1-1.pgdg24.04+2)
+
+-- Started on 2026-10-09 00:54:59 +07
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET transaction_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3712 (class 0 OID 18391)
+-- Dependencies: 246
+-- Data for Name: animal_diets; Type: TABLE DATA; Schema: app; Owner: app_owner
+--
+
+INSERT INTO app.animal_diets OVERRIDING SYSTEM VALUE VALUES (2, 1, 1, 8.500, '2026-01-01', NULL, 'Основной рацион крупного хищника.');
+INSERT INTO app.animal_diets OVERRIDING SYSTEM VALUE VALUES (3, 2, 1, 7.800, '2026-01-01', NULL, 'Основной рацион крупного хищника.');
+INSERT INTO app.animal_diets OVERRIDING SYSTEM VALUE VALUES (4, 3, 1, 9.000, '2026-01-01', NULL, 'Основной рацион льва.');
+INSERT INTO app.animal_diets OVERRIDING SYSTEM VALUE VALUES (5, 4, 5, 6.500, '2026-01-01', NULL, 'Сезонный рацион медведя.');
+INSERT INTO app.animal_diets OVERRIDING SYSTEM VALUE VALUES (6, 5, 3, 1.300, '2026-01-01', NULL, 'Бамбук, фрукты и овощи.');
+INSERT INTO app.animal_diets OVERRIDING SYSTEM VALUE VALUES (7, 6, 3, 18.000, '2026-01-01', NULL, 'Листья, сено и овощи.');
+INSERT INTO app.animal_diets OVERRIDING SYSTEM VALUE VALUES (8, 7, 3, 45.000, '2026-01-01', NULL, 'Сено, веточный корм и овощи.');
+INSERT INTO app.animal_diets OVERRIDING SYSTEM VALUE VALUES (9, 8, 4, 0.350, '2026-01-01', NULL, 'Зерно и минеральные добавки.');
+INSERT INTO app.animal_diets OVERRIDING SYSTEM VALUE VALUES (10, 9, 5, 0.800, '2026-01-01', NULL, 'Фрукты, овощи и белковые добавки.');
+INSERT INTO app.animal_diets OVERRIDING SYSTEM VALUE VALUES (11, 10, 1, 5.500, '2026-01-01', NULL, 'Основной рацион снежного барса.');
+INSERT INTO app.animal_diets OVERRIDING SYSTEM VALUE VALUES (1, 1, 2, 1.200, '2026-01-01', NULL, 'Обновлено dml_admin');
+
+
+--
+-- TOC entry 3710 (class 0 OID 18358)
+-- Dependencies: 244
+-- Data for Name: animal_health_records; Type: TABLE DATA; Schema: app; Owner: app_owner
+--
+
+INSERT INTO app.animal_health_records OVERRIDING SYSTEM VALUE VALUES (1, 10, 1, 3, '2026-09-05 16:10:00+07', 'Отклонений не выявлено.', 'Плановый осмотр.', 'Физическая активность достаточная.');
+INSERT INTO app.animal_health_records OVERRIDING SYSTEM VALUE VALUES (2, 8, 1, 2, '2026-09-06 12:45:00+07', 'Отклонений не выявлено.', 'Профилактический осмотр.', 'Содержится в группе.');
+INSERT INTO app.animal_health_records OVERRIDING SYSTEM VALUE VALUES (3, 7, 1, 3, '2026-09-07 10:00:00+07', 'Отклонений не выявлено.', 'Профилактические процедуры.', 'Поведение спокойное.');
+INSERT INTO app.animal_health_records OVERRIDING SYSTEM VALUE VALUES (4, 5, 1, 2, '2026-09-08 13:10:00+07', 'Отклонений не выявлено.', 'Плановый осмотр.', 'Вес соответствует возрастной норме.');
+INSERT INTO app.animal_health_records OVERRIDING SYSTEM VALUE VALUES (5, 3, 1, 1, '2026-09-09 09:40:00+07', 'Отклонений не выявлено.', 'Профилактический осмотр.', 'Состояние стабильное.');
+INSERT INTO app.animal_health_records OVERRIDING SYSTEM VALUE VALUES (6, 1, 1, 1, '2026-09-10 10:30:00+07', 'Отклонений не выявлено.', 'Плановая вакцинация по графику.', 'Аппетит и активность в норме.');
+INSERT INTO app.animal_health_records OVERRIDING SYSTEM VALUE VALUES (7, 6, 2, 1, '2026-09-13 15:00:00+07', 'Контроль состояния копыт.', 'Коррекция рациона и уход за копытами.', 'Повторный осмотр через месяц.');
+INSERT INTO app.animal_health_records OVERRIDING SYSTEM VALUE VALUES (8, 2, 2, 2, '2026-09-11 11:15:00+07', 'Незначительное снижение аппетита.', 'Наблюдение в течение 7 дней.', 'Изоляция не требуется.');
+INSERT INTO app.animal_health_records OVERRIDING SYSTEM VALUE VALUES (9, 4, 3, 3, '2026-09-12 14:20:00+07', 'Воспаление кожных покровов.', 'Местная обработка и повторный осмотр.', 'Ограничить контакт с посетителями.');
+INSERT INTO app.animal_health_records OVERRIDING SYSTEM VALUE VALUES (10, 9, 4, 1, '2026-09-14 09:30:00+07', 'Поступление после контакта с новой группой.', 'Карантинное наблюдение и анализы.', 'Доступ ограничен до снятия карантина.');
+
+
+--
+-- TOC entry 3708 (class 0 OID 18335)
+-- Dependencies: 242
+-- Data for Name: animal_origins; Type: TABLE DATA; Schema: app; Owner: app_owner
+--
+
+INSERT INTO app.animal_origins OVERRIDING SYSTEM VALUE VALUES (1, 1, 'BORN_IN_CAPTIVITY', 'Приморский центр сохранения тигров', 'Россия', '2017-09-20', 'Передан по программе сохранения амурского тигра.', true);
+INSERT INTO app.animal_origins OVERRIDING SYSTEM VALUE VALUES (2, 2, 'TRANSFER', 'Зоопарк Дальнего Востока', 'Россия', '2018-10-15', 'Передача в рамках программы формирования пары.', true);
+INSERT INTO app.animal_origins OVERRIDING SYSTEM VALUE VALUES (3, 3, 'TRANSFER', 'Национальный зоопарк', 'Казахстан', '2016-11-03', 'Передан по межзоопарковой программе.', true);
+INSERT INTO app.animal_origins OVERRIDING SYSTEM VALUE VALUES (4, 4, 'RESCUE', 'Центр реабилитации диких животных', 'Россия', '2015-04-17', 'Поступил после реабилитации.', true);
+INSERT INTO app.animal_origins OVERRIDING SYSTEM VALUE VALUES (5, 5, 'BORN_IN_CAPTIVITY', 'Европейский зоопарк', 'Германия', '2020-08-23', 'Поступила по международной программе разведения.', true);
+INSERT INTO app.animal_origins OVERRIDING SYSTEM VALUE VALUES (6, 6, 'TRANSFER', 'Африканский зоологический парк', 'Кения', '2014-12-10', 'Передана по программе сохранения жирафов.', true);
+INSERT INTO app.animal_origins OVERRIDING SYSTEM VALUE VALUES (7, 7, 'TRANSFER', 'Зоопарк Скандинавии', 'Швеция', '2012-07-30', 'Передан с ветеринарными документами.', true);
+INSERT INTO app.animal_origins OVERRIDING SYSTEM VALUE VALUES (8, 8, 'BORN_IN_CAPTIVITY', 'Питомник водоплавающих птиц', 'Россия', '2022-06-18', 'Поступила после завершения карантина.', true);
+INSERT INTO app.animal_origins OVERRIDING SYSTEM VALUE VALUES (9, 9, 'DONATION', 'Частный питомник приматов', 'Россия', '2019-12-01', 'Передан в дар по договору.', true);
+INSERT INTO app.animal_origins OVERRIDING SYSTEM VALUE VALUES (10, 10, 'TRANSFER', 'Горный зоопарк', 'Кыргызстан', '2018-03-14', 'Поступил в рамках программы сохранения снежного барса.', true);
+
+
+--
+-- TOC entry 3704 (class 0 OID 18260)
+-- Dependencies: 238
+-- Data for Name: animals; Type: TABLE DATA; Schema: app; Owner: app_owner
+--
+
+INSERT INTO app.animals OVERRIDING SYSTEM VALUE VALUES (3, '9e3dbe1e-eccf-43e2-a9eb-0b8ea770cd2a', 'Симба', 2, 2, 'M', '2015-07-08', '2016-11-03', 'RU-ZOO-000003', true);
+INSERT INTO app.animals OVERRIDING SYSTEM VALUE VALUES (4, 'e419ff3b-a586-433e-ac9c-3751d2b297dd', 'Миша', 3, 3, 'M', '2014-01-25', '2015-04-17', 'RU-ZOO-000004', true);
+INSERT INTO app.animals OVERRIDING SYSTEM VALUE VALUES (5, '1ba1bd9d-c975-4388-81e5-520b7b41a47c', 'Луна', 4, 4, 'F', '2019-06-14', '2020-08-23', 'RU-ZOO-000005', true);
+INSERT INTO app.animals OVERRIDING SYSTEM VALUE VALUES (6, '3e9f9dea-a484-40e0-9c2a-2b2181a9002a', 'Грейс', 5, 5, 'F', '2013-09-02', '2014-12-10', 'RU-ZOO-000006', true);
+INSERT INTO app.animals OVERRIDING SYSTEM VALUE VALUES (7, 'f3a268d9-851a-4e6c-ab2f-a847b1047da1', 'Бонго', 6, 6, 'M', '2010-02-11', '2012-07-30', 'RU-ZOO-000007', true);
+INSERT INTO app.animals OVERRIDING SYSTEM VALUE VALUES (8, '1fe0c4e6-bfe0-484f-a02f-384b47b3009a', 'Роза', 7, 7, 'F', '2021-04-20', '2022-06-18', 'RU-ZOO-000008', true);
+INSERT INTO app.animals OVERRIDING SYSTEM VALUE VALUES (9, 'eae083b3-0673-49e2-b96f-daa0ed558495', 'Локи', 8, 8, 'M', '2018-10-05', '2019-12-01', 'RU-ZOO-000009', true);
+INSERT INTO app.animals OVERRIDING SYSTEM VALUE VALUES (10, 'fd62fea9-ac26-4f2c-9bcd-b5a08d4b71e9', 'Ирбис', 9, 9, 'M', '2016-12-30', '2018-03-14', 'RU-ZOO-000010', true);
+INSERT INTO app.animals OVERRIDING SYSTEM VALUE VALUES (1, 'fa33aebf-8312-4592-9764-1c4b95da11d0', 'Амур', 1, 1, 'M', '2016-05-12', '2017-09-20', 'RU-ZOO-000001', true);
+INSERT INTO app.animals OVERRIDING SYSTEM VALUE VALUES (2, '5dc6bd87-cc11-48a5-97d8-e9ac199c65a3', 'Тайга', 1, 1, 'F', '2017-03-18', '2018-10-15', 'RU-ZOO-000002', true);
+
+
+--
+-- TOC entry 3706 (class 0 OID 18297)
+-- Dependencies: 240
+-- Data for Name: employees; Type: TABLE DATA; Schema: app; Owner: app_owner
+--
+
+INSERT INTO app.employees OVERRIDING SYSTEM VALUE VALUES (1, 'EMP_1001', 'Иванова Анна Сергеевна', '+79130000001', 'ivanova.a@zoo.local', 1, 1, '2021-03-15', true);
+INSERT INTO app.employees OVERRIDING SYSTEM VALUE VALUES (2, 'EMP_1002', 'Петров Дмитрий Олегович', '+79130000002', 'petrov.d@zoo.local', 1, 1, '2020-11-10', true);
+INSERT INTO app.employees OVERRIDING SYSTEM VALUE VALUES (3, 'EMP_1009', 'Николаева Ирина Романовна', '+79130000009', 'nikolaeva.i@zoo.local', 1, 1, '2022-08-09', true);
+INSERT INTO app.employees OVERRIDING SYSTEM VALUE VALUES (4, 'EMP_1003', 'Смирнова Елена Викторовна', '+79130000003', 'smirnova.e@zoo.local', 2, 2, '2022-02-01', true);
+INSERT INTO app.employees OVERRIDING SYSTEM VALUE VALUES (5, 'EMP_1004', 'Кузнецов Максим Андреевич', '+79130000004', 'kuznetsov.m@zoo.local', 2, 2, '2019-06-21', true);
+INSERT INTO app.employees OVERRIDING SYSTEM VALUE VALUES (6, 'EMP_1008', 'Соколов Артём Ильич', '+79130000008', 'sokolov.a@zoo.local', 2, 2, '2020-05-30', true);
+INSERT INTO app.employees OVERRIDING SYSTEM VALUE VALUES (7, 'EMP_1005', 'Васильева Ольга Игоревна', '+79130000005', 'vasilyeva.o@zoo.local', 3, 3, '2018-09-17', true);
+INSERT INTO app.employees OVERRIDING SYSTEM VALUE VALUES (8, 'EMP_1006', 'Орлов Сергей Павлович', '+79130000006', 'orlov.s@zoo.local', 4, 4, '2021-12-05', true);
+INSERT INTO app.employees OVERRIDING SYSTEM VALUE VALUES (9, 'EMP_1010', 'Морозов Павел Денисович', '+79130000010', 'morozov.p@zoo.local', 4, 4, '2019-10-25', true);
+INSERT INTO app.employees OVERRIDING SYSTEM VALUE VALUES (10, 'EMP_1007', 'Фёдорова Марина Алексеевна', '+79130000007', 'fedorova.m@zoo.local', 5, 5, '2023-01-12', true);
+
+
+--
+-- TOC entry 3702 (class 0 OID 18243)
+-- Dependencies: 236
+-- Data for Name: enclosures; Type: TABLE DATA; Schema: app; Owner: app_owner
+--
+
+INSERT INTO app.enclosures OVERRIDING SYSTEM VALUE VALUES (1, 'PRED_01', 'Открытый вольер для крупных хищников', 850.00, 2, true);
+INSERT INTO app.enclosures OVERRIDING SYSTEM VALUE VALUES (2, 'PRED_02', 'Закрытый вольер для крупных хищников', 720.00, 2, true);
+INSERT INTO app.enclosures OVERRIDING SYSTEM VALUE VALUES (3, 'BEAR_01', 'Вольер для медведей с бассейном', 1000.00, 3, true);
+INSERT INTO app.enclosures OVERRIDING SYSTEM VALUE VALUES (4, 'PANDA_01', 'Закрытый вольер для малых панд', 180.00, 2, true);
+INSERT INTO app.enclosures OVERRIDING SYSTEM VALUE VALUES (5, 'GIRAFFE_01', 'Высокий вольер для жирафов', 1500.00, 4, true);
+INSERT INTO app.enclosures OVERRIDING SYSTEM VALUE VALUES (6, 'ELEPHANT_01', 'Комплекс для слонов', 2400.00, 3, true);
+INSERT INTO app.enclosures OVERRIDING SYSTEM VALUE VALUES (7, 'BIRD_01', 'Авиарий для фламинго', 650.00, 20, true);
+INSERT INTO app.enclosures OVERRIDING SYSTEM VALUE VALUES (8, 'PRIMATE_01', 'Вольер для лемуров', 300.00, 10, true);
+INSERT INTO app.enclosures OVERRIDING SYSTEM VALUE VALUES (9, 'SNOW_01', 'Горный вольер для снежного барса', 600.00, 2, true);
+INSERT INTO app.enclosures OVERRIDING SYSTEM VALUE VALUES (10, 'BIRD_02', 'Авиарий для хищных птиц', 400.00, 6, true);
+
+
+--
+-- TOC entry 3720 (class 0 OID 18506)
+-- Dependencies: 254
+-- Data for Name: visitors; Type: TABLE DATA; Schema: app; Owner: app_owner
+--
+
+INSERT INTO app.visitors OVERRIDING SYSTEM VALUE VALUES (1, 'Алексеев Игорь Николаевич', '+79231000001', 'alekseev.i@mail.local', '1985-04-12', 'ADULT', true, '2026-10-07 18:38:33.841517+07');
+INSERT INTO app.visitors OVERRIDING SYSTEM VALUE VALUES (2, 'Белова Мария Сергеевна', '+79231000002', 'belova.m@mail.local', '1992-11-03', 'ADULT', true, '2026-10-07 18:38:33.841517+07');
+INSERT INTO app.visitors OVERRIDING SYSTEM VALUE VALUES (3, 'Громов Артём Дмитриевич', NULL, NULL, '2014-07-21', 'CHILD', false, '2026-10-07 18:38:33.841517+07');
+INSERT INTO app.visitors OVERRIDING SYSTEM VALUE VALUES (4, 'Давыдова Светлана Ивановна', '+79231000004', 'davydova.s@mail.local', '1958-02-17', 'SENIOR', true, '2026-10-07 18:38:33.841517+07');
+INSERT INTO app.visitors OVERRIDING SYSTEM VALUE VALUES (5, 'Ершов Кирилл Андреевич', '+79231000005', 'ershov.k@mail.local', '2001-09-30', 'ADULT', true, '2026-10-07 18:38:33.841517+07');
+INSERT INTO app.visitors OVERRIDING SYSTEM VALUE VALUES (6, 'Жукова Полина Олеговна', NULL, NULL, '2016-01-15', 'CHILD', false, '2026-10-07 18:38:33.841517+07');
+INSERT INTO app.visitors OVERRIDING SYSTEM VALUE VALUES (7, 'Зайцев Роман Валерьевич', '+79231000007', 'zaytsev.r@mail.local', '1979-06-08', 'ADULT', true, '2026-10-07 18:38:33.841517+07');
+INSERT INTO app.visitors OVERRIDING SYSTEM VALUE VALUES (8, 'Исаева Татьяна Петровна', '+79231000008', 'isaeva.t@mail.local', '1951-12-25', 'SENIOR', true, '2026-10-07 18:38:33.841517+07');
+INSERT INTO app.visitors OVERRIDING SYSTEM VALUE VALUES (9, 'Лебедев Фёдор Максимович', NULL, NULL, NULL, 'GROUP', false, '2026-10-07 18:38:33.841517+07');
+INSERT INTO app.visitors OVERRIDING SYSTEM VALUE VALUES (10, 'Муравьёва Алина Романовна', '+79231000010', 'muravyeva.a@mail.local', '1998-03-19', 'ADULT', true, '2026-10-07 18:38:33.841517+07');
+
+
+--
+-- TOC entry 3714 (class 0 OID 18421)
+-- Dependencies: 248
+-- Data for Name: data_change_log; Type: TABLE DATA; Schema: audit; Owner: postgres
+--
+
+INSERT INTO audit.data_change_log OVERRIDING SYSTEM VALUE VALUES (1, '2026-09-22 18:05:19.189244+07', 'postgres', 'postgres', '127.0.0.1', 'pgAdmin 4 - CONN:1819132', 'app', 'animals', 'UPDATE', '{"id": null}', '{"sex": "M", "animal_id": 1, "is_active": true, "public_id": "fa33aebf-8312-4592-9764-1c4b95da11d0", "birth_date": "2016-05-12", "species_id": 1, "animal_name": "Амур", "arrival_date": "2017-09-20", "enclosure_id": 1, "microchip_number": "RU-ZOO-000001"}', '{"sex": "M", "animal_id": 1, "is_active": true, "public_id": "fa33aebf-8312-4592-9764-1c4b95da11d0", "birth_date": "2016-05-12", "species_id": 1, "animal_name": "Амур-1", "arrival_date": "2017-09-20", "enclosure_id": 1, "microchip_number": "RU-ZOO-000001"}');
+INSERT INTO audit.data_change_log OVERRIDING SYSTEM VALUE VALUES (2, '2026-09-22 18:05:46.213639+07', 'postgres', 'postgres', '127.0.0.1', 'pgAdmin 4 - CONN:1819132', 'app', 'animals', 'UPDATE', '{"id": null}', '{"sex": "M", "animal_id": 1, "is_active": true, "public_id": "fa33aebf-8312-4592-9764-1c4b95da11d0", "birth_date": "2016-05-12", "species_id": 1, "animal_name": "Амур-1", "arrival_date": "2017-09-20", "enclosure_id": 1, "microchip_number": "RU-ZOO-000001"}', '{"sex": "M", "animal_id": 1, "is_active": true, "public_id": "fa33aebf-8312-4592-9764-1c4b95da11d0", "birth_date": "2016-05-12", "species_id": 1, "animal_name": "Амур", "arrival_date": "2017-09-20", "enclosure_id": 1, "microchip_number": "RU-ZOO-000001"}');
+INSERT INTO audit.data_change_log OVERRIDING SYSTEM VALUE VALUES (3, '2026-10-07 18:23:54.708751+07', 'postgres', 'postgres', '127.0.0.1', 'pgAdmin 4 - CONN:301041', 'app', 'animals', 'UPDATE', '{"id": null}', '{"sex": "M", "animal_id": 1, "is_active": true, "public_id": "fa33aebf-8312-4592-9764-1c4b95da11d0", "birth_date": "2016-05-12", "species_id": 1, "animal_name": "Амур", "arrival_date": "2017-09-20", "enclosure_id": 1, "microchip_number": "RU-ZOO-000001"}', '{"sex": "M", "animal_id": 1, "is_active": true, "public_id": "fa33aebf-8312-4592-9764-1c4b95da11d0", "birth_date": "2016-05-12", "species_id": 1, "animal_name": "Имя изменено читателем", "arrival_date": "2017-09-20", "enclosure_id": 1, "microchip_number": "RU-ZOO-000001"}');
+INSERT INTO audit.data_change_log OVERRIDING SYSTEM VALUE VALUES (4, '2026-10-07 18:23:57.995165+07', 'postgres', 'postgres', '127.0.0.1', 'pgAdmin 4 - CONN:301041', 'app', 'animals', 'UPDATE', '{"id": null}', '{"sex": "M", "animal_id": 1, "is_active": true, "public_id": "fa33aebf-8312-4592-9764-1c4b95da11d0", "birth_date": "2016-05-12", "species_id": 1, "animal_name": "Имя изменено читателем", "arrival_date": "2017-09-20", "enclosure_id": 1, "microchip_number": "RU-ZOO-000001"}', '{"sex": "M", "animal_id": 1, "is_active": true, "public_id": "fa33aebf-8312-4592-9764-1c4b95da11d0", "birth_date": "2016-05-12", "species_id": 1, "animal_name": "Имя изменено читателем", "arrival_date": "2017-09-20", "enclosure_id": 1, "microchip_number": "RU-ZOO-000001"}');
+INSERT INTO audit.data_change_log OVERRIDING SYSTEM VALUE VALUES (5, '2026-10-07 18:25:56.692631+07', 'postgres', 'postgres', '127.0.0.1', 'pgAdmin 4 - CONN:301041', 'app', 'animals', 'UPDATE', '{"id": null}', '{"sex": "M", "animal_id": 1, "is_active": true, "public_id": "fa33aebf-8312-4592-9764-1c4b95da11d0", "birth_date": "2016-05-12", "species_id": 1, "animal_name": "Имя изменено читателем", "arrival_date": "2017-09-20", "enclosure_id": 1, "microchip_number": "RU-ZOO-000001"}', '{"sex": "M", "animal_id": 1, "is_active": true, "public_id": "fa33aebf-8312-4592-9764-1c4b95da11d0", "birth_date": "2016-05-12", "species_id": 1, "animal_name": "Амур", "arrival_date": "2017-09-20", "enclosure_id": 1, "microchip_number": "RU-ZOO-000001"}');
+INSERT INTO audit.data_change_log OVERRIDING SYSTEM VALUE VALUES (6, '2026-10-07 18:35:41.820145+07', 'postgres', 'app_writer', '127.0.0.1', 'pgAdmin 4 - CONN:301041', 'app', 'animals', 'UPDATE', '{"animal_id": "2"}', '{"sex": "F", "animal_id": 2, "is_active": true, "public_id": "5dc6bd87-cc11-48a5-97d8-e9ac199c65a3", "birth_date": "2017-03-18", "species_id": 1, "animal_name": "Тайга", "arrival_date": "2018-10-15", "enclosure_id": 1, "microchip_number": "RU-ZOO-000002"}', '{"sex": "F", "animal_id": 2, "is_active": true, "public_id": "5dc6bd87-cc11-48a5-97d8-e9ac199c65a3", "birth_date": "2017-03-18", "species_id": 1, "animal_name": "Тайга-2", "arrival_date": "2018-10-15", "enclosure_id": 1, "microchip_number": "RU-ZOO-000002"}');
+INSERT INTO audit.data_change_log OVERRIDING SYSTEM VALUE VALUES (7, '2026-10-07 18:36:19.975436+07', 'postgres', 'app_writer', '127.0.0.1', 'pgAdmin 4 - CONN:301041', 'app', 'animals', 'UPDATE', '{"animal_id": "2"}', '{"sex": "F", "animal_id": 2, "is_active": true, "public_id": "5dc6bd87-cc11-48a5-97d8-e9ac199c65a3", "birth_date": "2017-03-18", "species_id": 1, "animal_name": "Тайга-2", "arrival_date": "2018-10-15", "enclosure_id": 1, "microchip_number": "RU-ZOO-000002"}', '{"sex": "F", "animal_id": 2, "is_active": true, "public_id": "5dc6bd87-cc11-48a5-97d8-e9ac199c65a3", "birth_date": "2017-03-18", "species_id": 1, "animal_name": "Тайга", "arrival_date": "2018-10-15", "enclosure_id": 1, "microchip_number": "RU-ZOO-000002"}');
+INSERT INTO audit.data_change_log OVERRIDING SYSTEM VALUE VALUES (8, '2026-10-08 23:57:38.511146+07', 'postgres', 'app_writer', '127.0.0.1', 'pgAdmin 4 - CONN:7877779', 'app', 'animal_diets', 'UPDATE', '{"animal_diet_id": "1"}', '{"notes": "Дополнительный рыбный день.", "valid_to": null, "animal_id": 1, "valid_from": "2026-01-01", "diet_type_id": 2, "animal_diet_id": 1, "daily_amount_kg": 1.200}', '{"notes": "Проверка app_writer", "valid_to": null, "animal_id": 1, "valid_from": "2026-01-01", "diet_type_id": 2, "animal_diet_id": 1, "daily_amount_kg": 1.200}');
+INSERT INTO audit.data_change_log OVERRIDING SYSTEM VALUE VALUES (9, '2026-10-08 23:57:43.371573+07', 'postgres', 'app_writer', '127.0.0.1', 'pgAdmin 4 - CONN:7877779', 'app', 'animal_diets', 'UPDATE', '{"animal_diet_id": "1"}', '{"notes": "Проверка app_writer", "valid_to": null, "animal_id": 1, "valid_from": "2026-01-01", "diet_type_id": 2, "animal_diet_id": 1, "daily_amount_kg": 1.200}', '{"notes": "Проверка app_writer", "valid_to": null, "animal_id": 1, "valid_from": "2026-01-01", "diet_type_id": 2, "animal_diet_id": 1, "daily_amount_kg": 1.200}');
+INSERT INTO audit.data_change_log OVERRIDING SYSTEM VALUE VALUES (10, '2026-10-09 00:00:05.777154+07', 'postgres', 'dml_admin', '127.0.0.1', 'pgAdmin 4 - CONN:7877779', 'app', 'animal_diets', 'UPDATE', '{"animal_diet_id": "1"}', '{"notes": "Проверка app_writer", "valid_to": null, "animal_id": 1, "valid_from": "2026-01-01", "diet_type_id": 2, "animal_diet_id": 1, "daily_amount_kg": 1.200}', '{"notes": "Обновлено dml_admin", "valid_to": null, "animal_id": 1, "valid_from": "2026-01-01", "diet_type_id": 2, "animal_diet_id": 1, "daily_amount_kg": 1.200}');
+INSERT INTO audit.data_change_log OVERRIDING SYSTEM VALUE VALUES (11, '2026-10-09 00:00:43.74371+07', 'postgres', 'dml_admin', '127.0.0.1', 'pgAdmin 4 - CONN:7877779', 'app', 'animal_diets', 'UPDATE', '{"animal_diet_id": "1"}', '{"notes": "Обновлено dml_admin", "valid_to": null, "animal_id": 1, "valid_from": "2026-01-01", "diet_type_id": 2, "animal_diet_id": 1, "daily_amount_kg": 1.200}', '{"notes": "Обновлено dml_admin", "valid_to": null, "animal_id": 1, "valid_from": "2026-01-01", "diet_type_id": 2, "animal_diet_id": 1, "daily_amount_kg": 1.200}');
+
+
+--
+-- TOC entry 3716 (class 0 OID 18444)
+-- Dependencies: 250
+-- Data for Name: login_log; Type: TABLE DATA; Schema: audit; Owner: postgres
+--
+
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (1, '2026-10-07 17:57:03.701697+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:301041');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (2, '2026-10-07 17:57:12.700924+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - DB:zoo_secururity');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (3, '2026-10-07 17:57:12.702298+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - DB:zoo_secururity');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (4, '2026-10-07 17:58:20.460394+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:301041');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (5, '2026-10-07 22:06:01.093944+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - DB:zoo_secururity');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (6, '2026-10-07 23:49:57.422132+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - DB:zoo_secururity');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (7, '2026-10-07 23:50:08.444634+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:2681544');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (8, '2026-10-08 20:08:44.855481+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - DB:zoo_secururity');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (9, '2026-10-08 20:08:48.748759+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:6975668');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (10, '2026-10-08 20:23:25.629307+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:4754685');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (11, '2026-10-08 20:29:36.160842+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:2703430');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (12, '2026-10-08 20:29:44.99915+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:2703430');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (13, '2026-10-08 20:30:10.483161+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:8855371');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (14, '2026-10-08 23:44:00.037471+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - DB:zoo_secururity');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (15, '2026-10-08 23:44:00.086571+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:4754685');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (16, '2026-10-08 23:44:00.221425+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:8855371');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (17, '2026-10-08 23:44:04.123716+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:7877779');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (18, '2026-10-09 00:12:25.540993+07', 'zoo_reader', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - DB:zoo_secururity');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (19, '2026-10-09 00:49:39.833557+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - DB:zoo_secururity');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (20, '2026-10-09 00:49:39.969166+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:4754685');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (21, '2026-10-09 00:49:40.145152+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:8855371');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (22, '2026-10-09 00:49:49.247569+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - CONN:4501431');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (23, '2026-10-09 00:50:38.910836+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - DB:postgres');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (24, '2026-10-09 00:51:06.693191+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - DB:postgres');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (25, '2026-10-09 00:52:39.679549+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - DB:postgres');
+INSERT INTO audit.login_log OVERRIDING SYSTEM VALUE VALUES (26, '2026-10-09 00:54:59.231287+07', 'postgres', '127.0.0.1', 'zoo_secururity', 'pgAdmin 4 - DB:postgres');
+
+
+--
+-- TOC entry 3698 (class 0 OID 18208)
+-- Dependencies: 232
+-- Data for Name: departments; Type: TABLE DATA; Schema: ref; Owner: app_owner
+--
+
+INSERT INTO ref.departments OVERRIDING SYSTEM VALUE VALUES (1, 'VET', 'Ветеринарная служба', true);
+INSERT INTO ref.departments OVERRIDING SYSTEM VALUE VALUES (2, 'CARE', 'Служба ухода за животными', true);
+INSERT INTO ref.departments OVERRIDING SYSTEM VALUE VALUES (3, 'ADMIN', 'Администрация', true);
+INSERT INTO ref.departments OVERRIDING SYSTEM VALUE VALUES (4, 'SECURITY', 'Служба безопасности', true);
+INSERT INTO ref.departments OVERRIDING SYSTEM VALUE VALUES (5, 'EDU', 'Просветительский отдел', true);
+
+
+--
+-- TOC entry 3694 (class 0 OID 18178)
+-- Dependencies: 228
+-- Data for Name: diet_types; Type: TABLE DATA; Schema: ref; Owner: app_owner
+--
+
+INSERT INTO ref.diet_types OVERRIDING SYSTEM VALUE VALUES (1, 'Мясной рацион', 'Мясо, субпродукты и витаминные добавки для хищников.', true);
+INSERT INTO ref.diet_types OVERRIDING SYSTEM VALUE VALUES (2, 'Рыбный рацион', 'Рыба и витаминные добавки для рыбоядных животных.', true);
+INSERT INTO ref.diet_types OVERRIDING SYSTEM VALUE VALUES (3, 'Растительный рацион', 'Овощи, фрукты, листья, сено и травы.', true);
+INSERT INTO ref.diet_types OVERRIDING SYSTEM VALUE VALUES (4, 'Зерновой рацион', 'Зерновые культуры, семена и комбикорм.', true);
+INSERT INTO ref.diet_types OVERRIDING SYSTEM VALUE VALUES (5, 'Смешанный рацион', 'Комбинация растительных и животных компонентов.', true);
+
+
+--
+-- TOC entry 3696 (class 0 OID 18192)
+-- Dependencies: 230
+-- Data for Name: health_statuses; Type: TABLE DATA; Schema: ref; Owner: app_owner
+--
+
+INSERT INTO ref.health_statuses OVERRIDING SYSTEM VALUE VALUES (1, 'Здоров', 1, false, true);
+INSERT INTO ref.health_statuses OVERRIDING SYSTEM VALUE VALUES (2, 'Плановое наблюдение', 2, false, true);
+INSERT INTO ref.health_statuses OVERRIDING SYSTEM VALUE VALUES (3, 'Требуется лечение', 3, false, true);
+INSERT INTO ref.health_statuses OVERRIDING SYSTEM VALUE VALUES (4, 'Карантин', 4, true, true);
+INSERT INTO ref.health_statuses OVERRIDING SYSTEM VALUE VALUES (5, 'Критическое состояние', 5, true, true);
+
+
+--
+-- TOC entry 3700 (class 0 OID 18224)
+-- Dependencies: 234
+-- Data for Name: positions; Type: TABLE DATA; Schema: ref; Owner: app_owner
+--
+
+INSERT INTO ref.positions OVERRIDING SYSTEM VALUE VALUES (1, 'VETERINARIAN', 'Ветеринарный врач', 4, true);
+INSERT INTO ref.positions OVERRIDING SYSTEM VALUE VALUES (2, 'KEEPER', 'Кипер', 2, true);
+INSERT INTO ref.positions OVERRIDING SYSTEM VALUE VALUES (3, 'ADMINISTRATOR', 'Администратор', 3, true);
+INSERT INTO ref.positions OVERRIDING SYSTEM VALUE VALUES (4, 'SECURITY_OFFICER', 'Сотрудник службы безопасности', 3, true);
+INSERT INTO ref.positions OVERRIDING SYSTEM VALUE VALUES (5, 'EDUCATOR', 'Специалист просветительского отдела', 2, true);
+
+
+--
+-- TOC entry 3692 (class 0 OID 18161)
+-- Dependencies: 226
+-- Data for Name: species; Type: TABLE DATA; Schema: ref; Owner: app_owner
+--
+
+INSERT INTO ref.species OVERRIDING SYSTEM VALUE VALUES (1, 'Амурский тигр', 'Panthera tigris altaica', 'EN', true);
+INSERT INTO ref.species OVERRIDING SYSTEM VALUE VALUES (2, 'Африканский лев', 'Panthera leo', 'VU', true);
+INSERT INTO ref.species OVERRIDING SYSTEM VALUE VALUES (3, 'Бурый медведь', 'Ursus arctos', 'LC', true);
+INSERT INTO ref.species OVERRIDING SYSTEM VALUE VALUES (4, 'Красная панда', 'Ailurus fulgens', 'EN', true);
+INSERT INTO ref.species OVERRIDING SYSTEM VALUE VALUES (5, 'Сетчатый жираф', 'Giraffa camelopardalis reticulata', 'EN', true);
+INSERT INTO ref.species OVERRIDING SYSTEM VALUE VALUES (6, 'Африканский слон', 'Loxodonta africana', 'EN', true);
+INSERT INTO ref.species OVERRIDING SYSTEM VALUE VALUES (7, 'Обыкновенный фламинго', 'Phoenicopterus roseus', 'LC', true);
+INSERT INTO ref.species OVERRIDING SYSTEM VALUE VALUES (8, 'Кольцехвостый лемур', 'Lemur catta', 'EN', true);
+INSERT INTO ref.species OVERRIDING SYSTEM VALUE VALUES (9, 'Снежный барс', 'Panthera uncia', 'VU', true);
+INSERT INTO ref.species OVERRIDING SYSTEM VALUE VALUES (10, 'Степной орёл', 'Aquila nipalensis', 'EN', true);
+
+
+--
+-- TOC entry 3718 (class 0 OID 18460)
+-- Dependencies: 252
+-- Data for Name: animals_import; Type: TABLE DATA; Schema: stg; Owner: app_owner
+--
+
+INSERT INTO stg.animals_import OVERRIDING SYSTEM VALUE VALUES (1, 1, 'Тестовое животное', 'Амурский тигр', NULL, NULL, NULL, NULL, NULL, '2026-10-09 00:00:05.777154+07', NULL, 'NEW', NULL);
+INSERT INTO stg.animals_import OVERRIDING SYSTEM VALUE VALUES (3, 9001, 'Тестовое животное', 'Амурский тигр', NULL, NULL, NULL, NULL, NULL, '2026-10-09 00:00:43.74371+07', NULL, 'NEW', NULL);
+
+
+--
+-- TOC entry 3886 (class 0 OID 0)
+-- Dependencies: 245
+-- Name: animal_diets_animal_diet_id_seq; Type: SEQUENCE SET; Schema: app; Owner: app_owner
+--
+
+SELECT pg_catalog.setval('app.animal_diets_animal_diet_id_seq', 11, true);
+
+
+--
+-- TOC entry 3887 (class 0 OID 0)
+-- Dependencies: 243
+-- Name: animal_health_records_health_record_id_seq; Type: SEQUENCE SET; Schema: app; Owner: app_owner
+--
+
+SELECT pg_catalog.setval('app.animal_health_records_health_record_id_seq', 10, true);
+
+
+--
+-- TOC entry 3888 (class 0 OID 0)
+-- Dependencies: 241
+-- Name: animal_origins_origin_id_seq; Type: SEQUENCE SET; Schema: app; Owner: app_owner
+--
+
+SELECT pg_catalog.setval('app.animal_origins_origin_id_seq', 10, true);
+
+
+--
+-- TOC entry 3889 (class 0 OID 0)
+-- Dependencies: 237
+-- Name: animals_animal_id_seq; Type: SEQUENCE SET; Schema: app; Owner: app_owner
+--
+
+SELECT pg_catalog.setval('app.animals_animal_id_seq', 10, true);
+
+
+--
+-- TOC entry 3890 (class 0 OID 0)
+-- Dependencies: 239
+-- Name: employees_employee_id_seq; Type: SEQUENCE SET; Schema: app; Owner: app_owner
+--
+
+SELECT pg_catalog.setval('app.employees_employee_id_seq', 10, true);
+
+
+--
+-- TOC entry 3891 (class 0 OID 0)
+-- Dependencies: 235
+-- Name: enclosures_enclosure_id_seq; Type: SEQUENCE SET; Schema: app; Owner: app_owner
+--
+
+SELECT pg_catalog.setval('app.enclosures_enclosure_id_seq', 10, true);
+
+
+--
+-- TOC entry 3892 (class 0 OID 0)
+-- Dependencies: 253
+-- Name: visitors_visitor_id_seq; Type: SEQUENCE SET; Schema: app; Owner: app_owner
+--
+
+SELECT pg_catalog.setval('app.visitors_visitor_id_seq', 10, true);
+
+
+--
+-- TOC entry 3893 (class 0 OID 0)
+-- Dependencies: 247
+-- Name: data_change_log_audit_id_seq; Type: SEQUENCE SET; Schema: audit; Owner: postgres
+--
+
+SELECT pg_catalog.setval('audit.data_change_log_audit_id_seq', 11, true);
+
+
+--
+-- TOC entry 3894 (class 0 OID 0)
+-- Dependencies: 249
+-- Name: login_log_login_id_seq; Type: SEQUENCE SET; Schema: audit; Owner: postgres
+--
+
+SELECT pg_catalog.setval('audit.login_log_login_id_seq', 26, true);
+
+
+--
+-- TOC entry 3895 (class 0 OID 0)
+-- Dependencies: 231
+-- Name: departments_department_id_seq; Type: SEQUENCE SET; Schema: ref; Owner: app_owner
+--
+
+SELECT pg_catalog.setval('ref.departments_department_id_seq', 5, true);
+
+
+--
+-- TOC entry 3896 (class 0 OID 0)
+-- Dependencies: 227
+-- Name: diet_types_diet_type_id_seq; Type: SEQUENCE SET; Schema: ref; Owner: app_owner
+--
+
+SELECT pg_catalog.setval('ref.diet_types_diet_type_id_seq', 5, true);
+
+
+--
+-- TOC entry 3897 (class 0 OID 0)
+-- Dependencies: 229
+-- Name: health_statuses_health_status_id_seq; Type: SEQUENCE SET; Schema: ref; Owner: app_owner
+--
+
+SELECT pg_catalog.setval('ref.health_statuses_health_status_id_seq', 5, true);
+
+
+--
+-- TOC entry 3898 (class 0 OID 0)
+-- Dependencies: 233
+-- Name: positions_position_id_seq; Type: SEQUENCE SET; Schema: ref; Owner: app_owner
+--
+
+SELECT pg_catalog.setval('ref.positions_position_id_seq', 5, true);
+
+
+--
+-- TOC entry 3899 (class 0 OID 0)
+-- Dependencies: 225
+-- Name: species_species_id_seq; Type: SEQUENCE SET; Schema: ref; Owner: app_owner
+--
+
+SELECT pg_catalog.setval('ref.species_species_id_seq', 10, true);
+
+
+--
+-- TOC entry 3900 (class 0 OID 0)
+-- Dependencies: 251
+-- Name: animals_import_import_id_seq; Type: SEQUENCE SET; Schema: stg; Owner: app_owner
+--
+
+SELECT pg_catalog.setval('stg.animals_import_import_id_seq', 3, true);
+
+
+-- Completed on 2026-10-09 00:54:59 +07
+
+--
+-- PostgreSQL database dump complete
+--
+
+\unrestrict BSJONhMGZ8T2vW045OU8jWJE3q2smOxwL0UQZRsaTD06F70UfxawPdIK6MsvV0W
+
